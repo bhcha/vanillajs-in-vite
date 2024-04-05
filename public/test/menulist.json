@@ -1,0 +1,20 @@
+[
+  {
+    "menuId": "11",
+    "templateId": "predict01",
+    "path": "/ADME",
+    "menuName": "ADAPT: Advanced Daewoong ADME/T Prediction Tool"
+  },
+  {
+    "menuId": "21",
+    "templateId": "predict02",
+    "path": "/Image",
+    "menuName": "Daewoong KCB ID to 2D Image Converter"
+  },
+  {
+    "menuId": "31",
+    "templateId": "download",
+    "path": "/doc/AI_In_Silico_Analysis_Request_Form.docx",
+    "menuName": "업무협조요청 양식"
+  }
+]

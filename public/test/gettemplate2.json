@@ -1,0 +1,12 @@
+
+{
+  "templateId": "predict02",
+  "path": "/Image",
+  "content": "<label for=\"id\">Compound KCB ID:<br></label>\n        <input type=\"text\" name=\"search_1\" id=\"search_1\" required/><br/>",
+  "webmasterMail": "swshin017@daewoong.co.kr",
+  "filePath": "",
+  "action": "",
+  "menuName": "Daewoong KCB ID to 2D Image Converter",
+  "menuId": "21"
+
+}

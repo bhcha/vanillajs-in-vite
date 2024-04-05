@@ -1,0 +1,16 @@
+[
+  {
+    "templateId": "predict01",
+    "content": "<label for=\"id\">Compound ID:</label>    \n        <input type=\"text\" name=\"id\" id=\"id\" required/><br/>\n\n        <label for=\"smiles\">SMILES:</label>\n        <input type=\"text\" name=\"smiles\" id=\"smiles\" required/><br/>",
+    "webmasterMail": "mhs0511@daewoong.co.kr",
+    "filePath": "/doc/ADMET_prediction_system_README.pdf",
+    "action": ""
+  },
+  {
+    "templateId": "predict02",
+    "content": "<label for=\"id\">Compound KCB ID:<br></label>\n        <input type=\"text\" name=\"search_1\" id=\"search_1\" required/><br/>",
+    "webmasterMail": "swshin017@daewoong.co.kr",
+    "filePath": "",
+    "action": ""
+  }
+]

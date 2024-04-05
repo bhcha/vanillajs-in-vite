@@ -30,10 +30,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 
 #app {
   max-width: 1280px;
@@ -95,9 +92,6 @@ button:focus-visible {
   }
 }
 
-
-
-
 .link-box {
   max-width: 500px;
   border: 1px solid #ccc; /* 회색 테두리 */
@@ -123,6 +117,11 @@ h1 {
   font-size: 48px;
 }
 
+.template-h1 {
+  color: #FF9300;
+  font-size: 30px;
+}
+
 .system-text {
   font-size: 18px; /* 글자 크기를 18px로 조정 */
   font-weight: bold; /* 볼드체 적용 */
@@ -140,4 +139,87 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#progress-container {
+  display: none;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #ccc;
+  border-top: 10px solid #007BFF;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #7F7F7F;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.help-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 5px 10px;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* 버튼을 아래로 이동 */
+}
+
+.help-button:hover {
+  background-color: #0056b3;
+}
+
+#loading-message {
+  margin-top: 10px;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
