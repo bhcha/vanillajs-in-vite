@@ -1,21 +1,11 @@
-import {getContent} from "./layout.js";
-import {request} from "../public/commons/communication.js";
+import {renderContent} from "./layout.js";
+import {defineWebComponents} from "@/components/component-define.js";
 
 
-function renderHtml(r) {
-    const $app = document.querySelector('#app');
-    $app.innerHTML = r;
-}
-
-function render() {
-    console.log('render is called');
-
+function setRouter() {
     const path = location.pathname;
 
-    _.go(
-        getContent(path)
-        ,renderHtml
-    );
+    renderContent(path);
 
     document.querySelectorAll('a').forEach($a => {
         $a.addEventListener('click', (event) => {
@@ -25,7 +15,7 @@ function render() {
             }
             event.preventDefault();
             history.pushState(null, null, path);
-            render();
+            setRouter();
         })
     })
 
@@ -33,10 +23,15 @@ function render() {
 }
 
 function main() {
-    render();
+    setRouter();
 
+    defineWebComponents();
 
-    window.addEventListener('popstate', render);
+    window.addEventListener('popstate', setRouter);
 }
 
+
+
 main();
+
+

@@ -129,20 +129,10 @@ h1 {
   color: dimgray; /* 폰트 색을 회색으로 변경 */
 }
 
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 form {
-  max-width: 400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -184,7 +174,7 @@ input[type="text"] {
   animation: spin 2s linear infinite;
 }
 
-input[type="submit"] {
+input[type="button"] {
   padding: 10px 20px;
   background-color: #7F7F7F;
   color: #fff;
@@ -194,8 +184,16 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #0056b3;
+}
+
+input[type="button"].loading {
+  background-color: #c8c816;
+}
+
+input[type="button"].completed {
+  background-color: #17b300;
 }
 
 .help-button {
@@ -213,6 +211,8 @@ input[type="submit"]:hover {
 .help-button:hover {
   background-color: #0056b3;
 }
+
+
 
 #loading-message {
   margin-top: 10px;
